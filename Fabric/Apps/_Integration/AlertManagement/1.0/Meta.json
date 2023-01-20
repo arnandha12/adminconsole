@@ -1,0 +1,10 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "AdminConsoleCommons.jar",
+    "type" : "jar"
+  }, {
+    "name" : "AdminConsoleServices.jar",
+    "type" : "servicejar"
+  } ]
+}

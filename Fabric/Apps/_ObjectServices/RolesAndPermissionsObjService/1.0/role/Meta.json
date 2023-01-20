@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "manageRole" : "manageRoleMapping",
+    "manageRoleCompositeActions" : "manageRoleCompositeActionsMapping",
+    "getUserOrRoleCompositePermissions" : "getUserOrRoleCompositePermissionsMapping",
+    "manageRoleCompositePermissions" : "manageRoleCompositePermissionsMapping",
+    "getUserOrRoleCompositeActions" : "getUserOrRoleCompositeActionsMapping",
+    "get" : "getMapping",
+    "createRole" : "createRoleMapping",
+    "editInternalRoleToCustomerRoleMapping" : "editInternalRoleToCustomerRoleMappingMapping",
+    "getInternalRoleToCustomerRoleMapping" : "getInternalRoleToCustomerRoleMappingMapping",
+    "getRoles" : "getRolesMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

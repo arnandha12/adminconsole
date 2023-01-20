@@ -1,0 +1,32 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "AdminConsoleCommons.jar",
+    "type" : "jar"
+  }, {
+    "name" : "sql2o-1.5.4.jar",
+    "type" : "jar"
+  }, {
+    "name" : "LogServices.jar",
+    "type" : "jar"
+  }, {
+    "name" : "dom4j-2.1.3.jar",
+    "type" : "jar"
+  }, {
+    "name" : "jose4j-0.7.7.jar",
+    "type" : "dependentJar"
+  }, {
+    "name" : "infinity-api-commons.jar",
+    "type" : "dependentJar"
+  }, {
+    "name" : "DBPFramework.jar",
+    "type" : "servicejar"
+  }, {
+    "name" : "commons-csv-1.5.jar",
+    "type" : "jar"
+  }, {
+    "name" : "owasp-java-html-sanitizer-20180219.1.jar",
+    "type" : "jar"
+  } ],
+  "description" : "All of the external dependency libraries of Customer360 have been tagged to this Java Service. This Java Service has no operations and is used only to manage the dependency libraries."
+}

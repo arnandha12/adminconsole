@@ -1,0 +1,42 @@
+{
+  "operationConfig" : {
+    "name" : "updateDefaultCampaigns4311",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <map inputpath=\"defaultCampaign\" outputpath=\"defaultCampaign\">                  <set-param inputpath=\"placeholderId\" outputpath=\"placeholderId\"/>            <set-param inputpath=\"onlineContentId\" outputpath=\"onlineContentId\"/>        <set-param inputpath=\"imageURL\" outputpath=\"imageURL\"/>        <set-param inputpath=\"targetURL\" outputpath=\"targetURL\"/>        <set-param inputpath=\"imageIndex\" outputpath=\"imageIndex\"/>      </map>  </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"campaignmanagement\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CampaignManagementMS (1.0).updateDefaultCampaigns\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:campaignmanagement\",\"fromPort\":\"source\",\"toPort\":\"source:campaignmanagement\",\"visible\":true,\"common\":false},{\"from\":\"source:campaignmanagement\",\"to\":\"source:campaignmanagement:fields\",\"fromPort\":\"source:campaignmanagement\",\"toPort\":\"source:campaignmanagement:fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:parameters\",\"fromPort\":\"target\",\"toPort\":\"target:parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:defaultCampaign:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:defaultCampaign:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "CampaignManagementMS",
+      "serviceVersion" : "1.0",
+      "operationName" : "updateDefaultCampaigns"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "campaignmanagement",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : true,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <map inputpath=\"defaultCampaign\" outputpath=\"defaultCampaign\">                  <set-param inputpath=\"placeholderId\" outputpath=\"placeholderId\"/>            <set-param inputpath=\"onlineContentId\" outputpath=\"onlineContentId\"/>        <set-param inputpath=\"imageURL\" outputpath=\"imageURL\"/>        <set-param inputpath=\"targetURL\" outputpath=\"targetURL\"/>        <set-param inputpath=\"imageIndex\" outputpath=\"imageIndex\"/>      </map>  </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"campaignmanagement\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CampaignManagementMS (1.0).updateDefaultCampaigns\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:campaignmanagement\",\"fromPort\":\"source\",\"toPort\":\"source:campaignmanagement\",\"visible\":true,\"common\":false},{\"from\":\"source:campaignmanagement\",\"to\":\"source:campaignmanagement:fields\",\"fromPort\":\"source:campaignmanagement\",\"toPort\":\"source:campaignmanagement:fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:parameters\",\"fromPort\":\"target\",\"toPort\":\"target:parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:defaultCampaign:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:defaultCampaign:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : true,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : true
+    } ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getServiceDefinitionMonetaryActions" : "getServiceDefinitionMonetaryActionsMapping",
+    "deleteServiceDefinition" : "deleteServiceDefinitionMapping",
+    "getServiceDefinitionsForContracts" : "getServiceDefinitionsForContractsMapping",
+    "createServiceDefinition" : "createServiceDefinitionMapping",
+    "getServicedefinitionAndRoleFeatures" : "getServicedefinitionAndRoleFeaturesMapping",
+    "getServiceDefinition" : "getServiceDefinitionMapping",
+    "getServiceDefinitionFeaturesAndLimits" : "getServiceDefinitionFeaturesAndLimitsMapping",
+    "getServiceDefinitionActionLimit" : "getServiceDefinitionActionLimitMapping",
+    "updateDefaultRole" : "updateDefaultRoleMapping",
+    "editServiceDefinition" : "editServiceDefinitionMapping",
+    "getServiceDefinitionRoles" : "getServiceDefinitionRolesMapping",
+    "manageServiceDefinitionStatus" : "manageServiceDefinitionStatusMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getLocationDetails" : "getLocationDetailsMapping",
+    "getFilteredLocations" : "getFilteredLocationsMapping",
+    "getBranchDetails" : "getBranchDetailsMapping",
+    "getAddressSuggestions" : "getAddressSuggestionsMapping",
+    "getLocations" : "getLocationsMapping",
+    "downloadLocationsList" : "downloadLocationsListMapping",
+    "getATMDetails" : "getATMDetailsMapping",
+    "getLocationRange" : "getLocationRangeMapping",
+    "getSearchedLocation" : "getSearchedLocationMapping",
+    "getLocationAddress" : "getLocationAddressMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

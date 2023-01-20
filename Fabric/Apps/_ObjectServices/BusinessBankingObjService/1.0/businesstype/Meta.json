@@ -1,0 +1,19 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "createBusinessType" : "createBusinessTypeMapping",
+    "getBusinessTypeGroups" : "getBusinessTypeGroupsMapping",
+    "getBusinessTypes" : "getBusinessTypesMapping",
+    "deleteBusinessType" : "deleteBusinessTypeMapping",
+    "updateBusinessType" : "updateBusinessTypeMapping",
+    "getBusinessTypeCustomers" : "getBusinessTypeCustomersMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="Java" encryptSecureInfo="false">
+    <config/>
+    <apiThrottling>
+        <entry>
+            <key>rateLimitPerIP</key>
+            <value>10</value>
+        </entry>
+        <entry>
+            <key>totalRateLimit</key>
+            <value>100</value>
+        </entry>
+    </apiThrottling>
+    <jsonpath>false</jsonpath>
+</endpoint>

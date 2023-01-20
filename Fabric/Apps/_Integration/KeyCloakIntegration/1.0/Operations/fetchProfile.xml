@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="fetchProfile" passwordencrypted="false" security="private" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.kony.adminconsole.postprocessor.KeyCLoakUserAuthenticationPostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value="var access_token = request.getParameter(&quot;access_token&quot;);&#10;logger.debug(&quot;Access Token in Keycloak Orch Preprocesor == &quot;+access_token);&#10;request.addRequestParam_(&quot;Authorization&quot;,&quot;Bearer &quot;+access_token);&#10;request.setAttribute(&quot;Authorization&quot;,&quot;Bearer &quot;+access_token);"/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://_$_KEYCLOAK_ENDPOINT_URL_$_/userinfo"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.adminconsole.commons.handler.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwbWl3d0laaTFaejdUUnlMcXY0T2pIbzZxZEF0eTdvWU5iZlB1aVlYc1JjIn0.eyJleHAiOjE2MDcwOTk5NzQsImlhdCI6MTYwNzA5OTY3NCwiYXV0aF90aW1lIjoxNjA3MDk5NTM5LCJqdGkiOiI1ZTVhMDA1NS04ZWZjLTQ0MGQtYjBkMi04OWJlYzNjYzQyMzQiLCJpc3MiOiJodHRwOi8vMjAuNTQuNzUuMTY2OjgwODEvYXV0aC9yZWFsbXMvc3BvdGxpZ2h0X3JlYWxtIiwic3ViIjoiNjhkZTNiNGEtYThiNS00Njg4LThmNTYtNTZlZmI3NDIzMGU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic3BvdGxpZ2h0Iiwic2Vzc2lvbl9zdGF0ZSI6IjRhYWI3NmVmLThiOGEtNDIzNy05NDJmLWMwMjhhMTBjZmU2OSIsImFjciI6IjAiLCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJ1c2VyX2lkIjoiNjhkZTNiNGEtYThiNS00Njg4LThmNTYtNTZlZmI3NDIzMGU2Iiwicm9sZXMiOlsiU3VwZXIgQWRtaW4iLCJLZXlDbG9ha1Rlc3QiLCJLZXlDbG9ha1Rlc3RVc2Vyc1JvbGUiXX0.fwFPZLQLfFueLUZohs65_GBPTZCm3HjZzMsQWL5AH0BmCk6ty114giASSy7u40MtqvO28MnCX99ZjwIkJScr1yfqteGK068HAWYauzG8IqIlrHEEpLdkMo6OIN78uaAtRrtdR37n0-6fgEaeYahORzOrafgTqWN0PzKuauJPYbuVtbXEvvo0uJallLNAuahimnrD6X9WsgKxH9ShSvdshc70NYBZQUiuuAD3Mdd0ODzHzbQRrVzdI4nMO-zvUWCYM3jcbvUJw2SsbfEBZHqhIVPkeLlBJFx1tQpMNKaiwlMZH3ry59lSfH5G_VoPBXsUw1fuRddmJ0uxWxJ3qi5zlA" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="preferred_username" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.preferred_username" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="username" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.preferred_username" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="roles" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.roles" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="given_name" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.given_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="family_name" order="" paramOrder="5" parentOrder="0" passnull="false" sms-name="" src="$.family_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="$.name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="email" order="" paramOrder="7" parentOrder="0" passnull="false" sms-name="" src="$.email" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" paramOrder="8" parentOrder="0" passnull="false" sms-name="" src="$.user_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="backend_error_message" order="" paramOrder="9" parentOrder="0" passnull="false" sms-name="" src="$.error_description" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="backend_error_code" order="" paramOrder="10" parentOrder="0" passnull="false" sms-name="" src="$.error" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

@@ -1,0 +1,92 @@
+{
+    "HEAD": "wb0afaaa52694d2dbce15e2d99d34865",
+    "w0039e331f7a4d4c8b298842fdb858b5": {
+        "extension": "woff",
+        "kuid": "w0039e331f7a4d4c8b298842fdb858b5",
+        "name": "icomoon.woff",
+        "parent": "wa8dfabae89845129c9b74efa002fb69",
+        "type": "F"
+    },
+    "w158da4ab6e04746a2dbe3ccea98d98d": {
+        "extension": "js",
+        "kuid": "w158da4ab6e04746a2dbe3ccea98d98d",
+        "name": "richtextJquery.js",
+        "parent": "wb0afaaa52694d2dbce15e2d99d34865",
+        "type": "F"
+    },
+    "w1bff806620040e69bcb6a5b0b7f3491": {
+        "extension": "eot",
+        "kuid": "w1bff806620040e69bcb6a5b0b7f3491",
+        "name": "icomoon.eot",
+        "parent": "wa8dfabae89845129c9b74efa002fb69",
+        "type": "F"
+    },
+    "w3b4ac52faea4cd8a1b28284c3b573a1": {
+        "children": [
+            "wa8dfabae89845129c9b74efa002fb69",
+            "wd78dd781a074b3aa621823dbc3af7bb"
+        ],
+        "kuid": "w3b4ac52faea4cd8a1b28284c3b573a1",
+        "name": "font_icons",
+        "parent": "wb0afaaa52694d2dbce15e2d99d34865",
+        "type": "D"
+    },
+    "w78c86c3306c4c53bd0e9a6483a0e1b2": {
+        "extension": "html",
+        "kuid": "w78c86c3306c4c53bd0e9a6483a0e1b2",
+        "name": "richtext.html",
+        "parent": "wb0afaaa52694d2dbce15e2d99d34865",
+        "type": "F"
+    },
+    "w99d955bda914954a17f602b1c940530": {
+        "extension": "html",
+        "kuid": "w99d955bda914954a17f602b1c940530",
+        "name": "richtextViewer.html",
+        "parent": "wb0afaaa52694d2dbce15e2d99d34865",
+        "type": "F"
+    },
+    "wa8dfabae89845129c9b74efa002fb69": {
+        "children": [
+            "w1bff806620040e69bcb6a5b0b7f3491",
+            "wf208a907aa9464a84927114f9b27fd6",
+            "wd1d384298194cf097aefe8c00b99646",
+            "w0039e331f7a4d4c8b298842fdb858b5"
+        ],
+        "kuid": "wa8dfabae89845129c9b74efa002fb69",
+        "name": "fonts",
+        "parent": "w3b4ac52faea4cd8a1b28284c3b573a1",
+        "type": "D"
+    },
+    "wb0afaaa52694d2dbce15e2d99d34865": {
+        "children": [
+            "w3b4ac52faea4cd8a1b28284c3b573a1",
+            "w78c86c3306c4c53bd0e9a6483a0e1b2",
+            "w158da4ab6e04746a2dbe3ccea98d98d",
+            "w99d955bda914954a17f602b1c940530"
+        ],
+        "kuid": "wb0afaaa52694d2dbce15e2d99d34865",
+        "name": "localfiles",
+        "type": "L"
+    },
+    "wd1d384298194cf097aefe8c00b99646": {
+        "extension": "ttf",
+        "kuid": "wd1d384298194cf097aefe8c00b99646",
+        "name": "icomoon.ttf",
+        "parent": "wa8dfabae89845129c9b74efa002fb69",
+        "type": "F"
+    },
+    "wd78dd781a074b3aa621823dbc3af7bb": {
+        "extension": "css",
+        "kuid": "wd78dd781a074b3aa621823dbc3af7bb",
+        "name": "style.css",
+        "parent": "w3b4ac52faea4cd8a1b28284c3b573a1",
+        "type": "F"
+    },
+    "wf208a907aa9464a84927114f9b27fd6": {
+        "extension": "svg",
+        "kuid": "wf208a907aa9464a84927114f9b27fd6",
+        "name": "icomoon.svg",
+        "parent": "wa8dfabae89845129c9b74efa002fb69",
+        "type": "F"
+    }
+}

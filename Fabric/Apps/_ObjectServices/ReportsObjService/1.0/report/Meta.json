@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "displayAllColumns" : "displayAllColumnsMapping",
+    "fetchRecords" : "fetchRecordsMapping",
+    "showReports" : "showReportsMapping",
+    "saveReports" : "saveReportsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

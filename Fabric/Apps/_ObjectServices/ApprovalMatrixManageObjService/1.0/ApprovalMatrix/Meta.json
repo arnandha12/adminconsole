@@ -1,0 +1,24 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getApproversInSignatoryGroup" : "getApproversInSignatoryGroupMapping",
+    "updateApprovalRuleSGLevel" : "updateApprovalRuleSGLevelMapping",
+    "updateApprovalMatrixStatus" : "updateApprovalMatrixStatusMapping",
+    "getApprovalMatrix" : "getApprovalMatrixMapping",
+    "getApprovalMatrixByContractId" : "getApprovalMatrixByContractIdMapping",
+    "createApprovalRuleUserLevel" : "createApprovalRuleUserLevelMapping",
+    "getApprovalRules" : "getApprovalRulesMapping",
+    "updateApprovalRuleUserLevel" : "updateApprovalRuleUserLevelMapping",
+    "isApprovalMatrixDisabled" : "isApprovalMatrixDisabledMapping",
+    "createApprovalRuleSGLevel" : "createApprovalRuleSGLevelMapping",
+    "getAccountActionCustomerApproverList" : "getAccountActionCustomerApproverListMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

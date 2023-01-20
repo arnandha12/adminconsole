@@ -1,0 +1,20 @@
+{
+  "type" : "svcdriven",
+  "description" : "Features and actions associated to customer",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getCustomerFeaturesAndActionsByRole" : "getCustomerFeaturesAndActionsByRoleMapping",
+    "updateCustomerActions" : "updateCustomerActionsMapping",
+    "getCoreCustomerRoleFeatureActionLimits" : "getCoreCustomerRoleFeatureActionLimitsMapping",
+    "getCustomerRetailDirectFeaturesAndActions" : "getCustomerRetailDirectFeaturesAndActionsMapping",
+    "getCustomerFeaturesAndActionsCombined" : "getCustomerFeaturesAndActionsCombinedMapping",
+    "getCustomerFeaturesAndActions" : "getCustomerFeaturesAndActionsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

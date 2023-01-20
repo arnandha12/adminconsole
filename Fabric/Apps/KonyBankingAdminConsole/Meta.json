@@ -1,0 +1,531 @@
+{
+  "meta" : "{\"locked\":true}",
+  "subType" : "customapp",
+  "description" : "KonyBankingAdminConsole",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "AccountRequests",
+    "version" : "1.0",
+    "etag" : "0b548ea9-50ab-42fd-8710-8611d508769c"
+  }, {
+    "name" : "AddressValidation",
+    "version" : "1.0",
+    "etag" : "991cbbdc-2a4b-4192-aaa3-4f1e1ded36d0"
+  }, {
+    "name" : "AlertManagement",
+    "version" : "1.0",
+    "etag" : "ff4e2fa0-117a-4c46-a045-7ed2f09655de"
+  }, {
+    "name" : "AnalyticsServices",
+    "version" : "1.0",
+    "etag" : "1e1ee72b-011a-4115-a57b-5e5748017c19"
+  }, {
+    "name" : "APICustomIdentity",
+    "version" : "1.0",
+    "etag" : "04874e40-41de-4b66-a8de-6d182fe2300d"
+  }, {
+    "name" : "ApplicantManagement",
+    "version" : "1.0",
+    "etag" : "3f3141e4-6830-4056-853c-1a777d4426ab"
+  }, {
+    "name" : "ApplicationConfigurations",
+    "version" : "1.0",
+    "etag" : "29a658bd-5e79-4e56-b270-b13b26d96248"
+  }, {
+    "name" : "ApprovalMatrixManagement",
+    "version" : "1.0",
+    "etag" : "35c50bc7-05f6-4644-9f83-4dd595144843"
+  }, {
+    "name" : "AuditLogs",
+    "version" : "1.0",
+    "etag" : "ca0d34da-65c9-4e9c-9d34-d7f80f676006"
+  }, {
+    "name" : "AuthKMSService",
+    "version" : "1.0",
+    "etag" : "1a89c706-9150-4ce0-833a-2f53d832af3b"
+  }, {
+    "name" : "BrowserManagement",
+    "version" : "1.0",
+    "etag" : "6701d307-3d42-434d-86b1-95ff42cae750"
+  }, {
+    "name" : "BusinessBanking",
+    "version" : "1.0",
+    "etag" : "937ba569-97c2-4b51-9a32-7a00eb228683"
+  }, {
+    "name" : "BusinessConfiguration",
+    "version" : "1.0",
+    "etag" : "d9771216-99e2-470c-b392-06be3f7b0cc6"
+  }, {
+    "name" : "C360Identity",
+    "version" : "1.0",
+    "etag" : "b8b2adbf-628d-4823-9ea2-ac731875f926"
+  }, {
+    "name" : "C360_DependencyLibraries",
+    "version" : "1.0",
+    "etag" : "aa1699a2-ba13-416d-94f9-d34d744082d3"
+  }, {
+    "name" : "CampaignManagement",
+    "version" : "1.0",
+    "etag" : "a92499ce-c5b4-4d8b-950c-3b7ea40b26ea"
+  }, {
+    "name" : "CampaignManagementMS",
+    "version" : "1.0",
+    "etag" : "063500c1-c080-441f-9ee1-98e4bf586e1f"
+  }, {
+    "name" : "CardManagement",
+    "version" : "1.0",
+    "etag" : "bf42fa92-9bbd-477e-bfcf-c344eea5027d"
+  }, {
+    "name" : "CommonGetDataService",
+    "version" : "1.0",
+    "etag" : "31a90c45-ccf4-4882-bd4e-ba959f7ed1a3"
+  }, {
+    "name" : "ConfigurationService",
+    "version" : "1.0",
+    "etag" : "69f1ef0a-eb67-492f-9f8d-3edcbfc0dbc4"
+  }, {
+    "name" : "ConsentManagementMS",
+    "version" : "1.0",
+    "etag" : "d9129433-0118-420e-9af3-65e9954761c0"
+  }, {
+    "name" : "ContractManagement",
+    "version" : "1.0",
+    "etag" : "22c61d17-4d67-4b6a-81c6-f093e9bf5838"
+  }, {
+    "name" : "CRUDLayer",
+    "version" : "1.0",
+    "etag" : "c6a00c42-71f6-48ca-884f-5740428db956"
+  }, {
+    "name" : "Currency",
+    "version" : "1.0",
+    "etag" : "39a56078-370a-41fc-902d-19e2220ac779"
+  }, {
+    "name" : "CurrencyManagement",
+    "version" : "1.0",
+    "etag" : "40180c59-e1e0-4dea-9c36-cf7c6b20e4b3"
+  }, {
+    "name" : "CustomerAgentDBService",
+    "version" : "1.0",
+    "etag" : "1643016e-1e86-4ceb-b501-48deea0cd6ac"
+  }, {
+    "name" : "CustomerGroupsAndEntitlements",
+    "version" : "1.0",
+    "etag" : "33c374db-6c99-414d-8155-c66fb9505ae9"
+  }, {
+    "name" : "CustomerManagement",
+    "version" : "1.0",
+    "etag" : "8d36ce7b-1d15-41e1-81c4-4ffea9734d36"
+  }, {
+    "name" : "CustomerRequest",
+    "version" : "1.0",
+    "etag" : "c31b0438-6f68-4b45-bd3c-5210f4ed90c4"
+  }, {
+    "name" : "CustomerRole",
+    "version" : "1.0",
+    "etag" : "5f67fbb4-6942-49ae-92f0-66647234396e"
+  }, {
+    "name" : "CustomerServiceManagement",
+    "version" : "1.0",
+    "etag" : "58aa639e-9fcd-4c73-bc6d-243eda8e824a"
+  }, {
+    "name" : "CustomIdentity",
+    "version" : "1.0",
+    "etag" : "923ce69f-6f08-4232-89ea-bd39e3cce3bf"
+  }, {
+    "name" : "DBPAuthService",
+    "version" : "1.0",
+    "etag" : "7c0fe493-eed3-4fc1-904c-68828acdc19d"
+  }, {
+    "name" : "DBPServices",
+    "version" : "1.0",
+    "etag" : "ab4cd481-0844-4ebb-86e6-badbe83654b9"
+  }, {
+    "name" : "DecisionRuleManagement",
+    "version" : "1.0",
+    "etag" : "2bf74a01-547b-42c2-a54e-3cffea3468a9"
+  }, {
+    "name" : "DMSUserCreation",
+    "version" : "1.0",
+    "etag" : "101007a2-c349-4833-ba87-ce76088db3fd"
+  }, {
+    "name" : "DueDiligenceMS",
+    "version" : "1.0",
+    "etag" : "1f7006c2-dde1-4a84-a1c1-f63a32ccf462"
+  }, {
+    "name" : "DueDiligencePartyMS",
+    "version" : "1.0",
+    "etag" : "8d13eec5-7ce1-4abd-9b06-3b561be9dcad"
+  }, {
+    "name" : "EligibilityCriteria",
+    "version" : "1.0",
+    "etag" : "4dd645d3-70d5-4a54-a756-52ce904eb550"
+  }, {
+    "name" : "EmailKMSJavaService",
+    "version" : "1.0",
+    "etag" : "46584e29-27f6-4da8-bc6c-a850c4dd7c1f"
+  }, {
+    "name" : "EMailService",
+    "version" : "1.0",
+    "etag" : "0972e66a-1eea-4060-8662-a07d89f009ea"
+  }, {
+    "name" : "Feature",
+    "version" : "1.0",
+    "etag" : "067224c1-1ca1-4765-992d-92588d1f7ebb"
+  }, {
+    "name" : "FeaturesAndActions",
+    "version" : "1.0",
+    "etag" : "aec5213c-dac6-4c80-b631-229b7c4fe4e6"
+  }, {
+    "name" : "IdentityManagementService",
+    "version" : "1.0",
+    "etag" : "77e3c0cf-990b-4815-a5bc-5964518a5c09"
+  }, {
+    "name" : "KeyCloakAdminServices",
+    "version" : "1.0",
+    "etag" : "878d351b-a3c3-4f5a-8fb9-530511f1da12"
+  }, {
+    "name" : "KeyCloakCustomerAttributes",
+    "version" : "1.0",
+    "etag" : "75ab53cf-00a6-40ee-9a4c-68458cc699b3"
+  }, {
+    "name" : "KeyCloakIntegration",
+    "version" : "1.0",
+    "etag" : "21ec0db7-304f-4b3a-8e8f-2f2b78789720"
+  }, {
+    "name" : "LeadManagement",
+    "version" : "1.0",
+    "etag" : "d5a12149-aaaf-452a-b91c-b38f5737e973"
+  }, {
+    "name" : "LimitsAndFeesIntegration",
+    "version" : "1.0",
+    "etag" : "7419df7c-8c1f-4b2b-a735-5282bd643cc4"
+  }, {
+    "name" : "LocationDetails",
+    "version" : "1.0",
+    "etag" : "05172542-e7f6-4f10-91c1-8ce1e5cadda1"
+  }, {
+    "name" : "LocationManagement",
+    "version" : "1.0",
+    "etag" : "46ebf6bb-9797-4b47-b130-ce43e3994a23"
+  }, {
+    "name" : "LocationsUsingCSVService",
+    "version" : "1.0",
+    "etag" : "d8868c40-08c2-4154-bc91-515ffe992f8a"
+  }, {
+    "name" : "LogServices",
+    "version" : "1.0",
+    "etag" : "f95d9929-d6fd-40f1-a972-8bc9c53dd095"
+  }, {
+    "name" : "MFAConfigAndScenarios",
+    "version" : "1.0",
+    "etag" : "3a05cc85-8e10-4fc2-b047-f63cee158592"
+  }, {
+    "name" : "OLBServices",
+    "version" : "1.0",
+    "etag" : "85e953f4-d3b2-4500-a26b-0a8ead81a330"
+  }, {
+    "name" : "ProductAndFacilityManagement",
+    "version" : "1.0",
+    "etag" : "666d19b0-d583-4226-8fde-e74d9045ebcd"
+  }, {
+    "name" : "ProductManagamentMS",
+    "version" : "1.0",
+    "etag" : "2e3a99fa-f308-40c0-83f3-7c466e2c738a"
+  }, {
+    "name" : "ProductManagement",
+    "version" : "1.0",
+    "etag" : "8b39507a-79ea-44b8-90ae-e4d4c3213ece"
+  }, {
+    "name" : "ProductManagementFromMS",
+    "version" : "1.0",
+    "etag" : "45c1995b-79f2-4fb1-9cde-d00a9bf326d6"
+  }, {
+    "name" : "ReportService",
+    "version" : "1.0",
+    "etag" : "3f9e9409-3feb-44d7-ab84-19c82939edce"
+  }, {
+    "name" : "ReportsServices",
+    "version" : "1.0",
+    "etag" : "874145d7-1d44-47b9-a495-6f016ac990f1"
+  }, {
+    "name" : "RolesAndPermissionManagement",
+    "version" : "1.0",
+    "etag" : "d592b40f-0c56-43ba-8652-47776907b55d"
+  }, {
+    "name" : "SecurityImagesManagement",
+    "version" : "1.0",
+    "etag" : "007a3470-7171-4372-84c7-07699c5109f1"
+  }, {
+    "name" : "SecurityQuestionsManagement",
+    "version" : "1.0",
+    "etag" : "8c4c8eef-949d-4b6f-b71f-d442a2931e0b"
+  }, {
+    "name" : "SFSpotlightKCUserinfo",
+    "version" : "1.0",
+    "etag" : "3d4c39f9-8fb9-4b34-9ab1-b97bbe2d8c73"
+  }, {
+    "name" : "SignatoryGroupManagement",
+    "version" : "1.0",
+    "etag" : "cc220c6f-1d7d-4838-bbdd-00c106b8ad28"
+  }, {
+    "name" : "SpotlightDataStorageAPIs",
+    "version" : "1.0",
+    "etag" : "13e9801c-491b-4d00-90dc-c9eca803f401"
+  }, {
+    "name" : "SpotlightUserAttributes",
+    "version" : "1.0",
+    "etag" : "8ec2479f-c660-4231-a805-7d6226d5339b"
+  }, {
+    "name" : "StaticContentManagement",
+    "version" : "1.0",
+    "etag" : "e6d1a709-9a6d-4dca-9ce8-7c67994f7863"
+  }, {
+    "name" : "SystemManagement",
+    "version" : "1.0",
+    "etag" : "5b4aa08c-01c1-4486-98aa-26a16871bd7f"
+  }, {
+    "name" : "T24AlertSubscription",
+    "version" : "1.0",
+    "etag" : "b80fcb99-f76b-4b86-8a1a-a356f0ebf808"
+  }, {
+    "name" : "TermsAndConditions",
+    "version" : "1.0",
+    "etag" : "e5101a0b-549e-4a74-a8ee-ae0d84c34081"
+  }, {
+    "name" : "TestReportSvc",
+    "version" : "1.0",
+    "etag" : "88c9395f-1fd9-46fc-81c0-d30081730bdf"
+  }, {
+    "name" : "TPPAuthentication",
+    "version" : "1.0",
+    "etag" : "1d26451e-fe4a-4f15-8470-af82c5d1cecc"
+  }, {
+    "name" : "TppIdentity",
+    "version" : "1.0",
+    "etag" : "8d381844-58ce-4be1-b07e-b408a0deab1e"
+  }, {
+    "name" : "TransactionAndAuditLogs",
+    "version" : "1.0",
+    "etag" : "94e8bb2f-d9f6-4016-bfeb-7b49ad101084"
+  }, {
+    "name" : "UserAuthentication",
+    "version" : "1.0",
+    "etag" : "27ed779a-1496-4546-a0ba-d3d06ab0a262"
+  }, {
+    "name" : "UserManagement",
+    "version" : "1.0",
+    "etag" : "b31699eb-a582-466a-9875-5d2cba59f92e"
+  }, {
+    "name" : "ValidationServices",
+    "version" : "1.0",
+    "etag" : "fee7ec69-f33e-43d0-880f-d60bf6bc89b9"
+  }, {
+    "name" : "ViewFabricReports",
+    "version" : "1.0",
+    "etag" : "fa2c58e0-050e-4ac6-9c5b-15bacacb7c69"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "CustomerAndCustomerGroup",
+    "version" : "1.0",
+    "etag" : "3a647f75-2414-426c-b587-b8d96dab332d"
+  }, {
+    "name" : "FabricReportsOrch",
+    "version" : "1.0",
+    "etag" : "10239876-e8f8-41e1-a714-57b6f79ed2b7"
+  }, {
+    "name" : "C360IdentityOrchService",
+    "version" : "1.0",
+    "etag" : "dade491f-cfe3-4be3-9f94-f068de166633"
+  }, {
+    "name" : "KeyCloakOrchService",
+    "version" : "1.0",
+    "etag" : "e18250ae-2d4d-4b74-97dc-c3a91711eff1"
+  }, {
+    "name" : "EmailOrchService",
+    "version" : "1.0",
+    "etag" : "1caa7f5f-de7a-4657-8326-57be6696a133"
+  }, {
+    "name" : "FetchKeycloakUsersOrchService",
+    "version" : "1.0",
+    "etag" : "e031c38c-9b31-4c1f-81fb-f4d5e136a361"
+  }, {
+    "name" : "AlertOrchestration",
+    "version" : "1.0",
+    "etag" : "6554ca44-fced-4f3f-9e09-d5f3646fc77f"
+  }, {
+    "name" : "CustomerEntitlements",
+    "version" : "1.0",
+    "etag" : "7724ff52-87ac-4d65-b278-550d280f060a"
+  }, {
+    "name" : "IdentityManagementOrchService",
+    "version" : "1.0",
+    "etag" : "3e044630-b58e-42a5-bec3-594d6f67d607"
+  }, {
+    "name" : "Campaign_Segment",
+    "version" : "1.0",
+    "etag" : "ede06eb2-f388-43f6-9a78-808ba4324db6"
+  }, {
+    "name" : "ProductManagementOrchService",
+    "version" : "1.0",
+    "etag" : "bca086e0-c0db-4051-a6bd-7fecf5809087"
+  }, {
+    "name" : "CSRManagementOrig",
+    "version" : "1.0",
+    "etag" : "89888d9a-9d9a-44a6-9a74-3508e3fabed1"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "AccountRequestsObjService",
+    "version" : "1.0",
+    "etag" : "4fce057c-c6dd-41bf-b8c1-4c26402ffd6f"
+  }, {
+    "name" : "AlertAndAlertTypes",
+    "version" : "1.0",
+    "etag" : "88a9427c-8460-4c9e-ba81-9ad4d31ecf3f"
+  }, {
+    "name" : "AppConfigurationsObjService",
+    "version" : "1.0",
+    "etag" : "1ab79087-a17f-47c5-8b12-35c1af1fe649"
+  }, {
+    "name" : "ApprovalMatrixManageObjService",
+    "version" : "1.0",
+    "etag" : "f7e61dd3-b25b-4deb-bed7-2bd81aa71206"
+  }, {
+    "name" : "AuditLogsObjSvc",
+    "version" : "1.0",
+    "etag" : "8c903ea3-e172-4afd-a346-ccd46fbb5331"
+  }, {
+    "name" : "BankProductManagment",
+    "version" : "1.0",
+    "etag" : "c3da3b4d-b7d6-4118-9709-d86936a87bfc"
+  }, {
+    "name" : "BrowserManagementObjService",
+    "version" : "1.0",
+    "etag" : "2f9e3796-c455-4e9a-9dcd-5a7034abd38d"
+  }, {
+    "name" : "BusinessBankingObjService",
+    "version" : "1.0",
+    "etag" : "0e9685b7-5460-4f89-8608-9b5f6674f473"
+  }, {
+    "name" : "BusinessConfigObjService",
+    "version" : "1.0",
+    "etag" : "61262444-3386-4c4e-8e60-d68737e21dbc"
+  }, {
+    "name" : "CampaignManagementObjService",
+    "version" : "1.0",
+    "etag" : "a5d7301a-8e7e-4027-a7e3-009406ca7718"
+  }, {
+    "name" : "CardManagementObjService",
+    "version" : "1.0",
+    "etag" : "adfee22c-946f-4845-866a-2c50deabf099"
+  }, {
+    "name" : "ConfigurationObjService",
+    "version" : "1.0",
+    "etag" : "84b794d2-dd33-4bb7-a53d-cfa3d922766e"
+  }, {
+    "name" : "ContractManagementObjService",
+    "version" : "1.0",
+    "etag" : "cf655659-19c1-4f4e-8ad3-931906e2138a"
+  }, {
+    "name" : "CustomerGroupsAndEntitlObjSvc",
+    "version" : "1.0",
+    "etag" : "46d6c7eb-6ab5-458c-b247-9ccd204d6db7"
+  }, {
+    "name" : "CustomerManagementObjService",
+    "version" : "1.0",
+    "etag" : "dc74e464-6105-449c-8006-5aa9c7492017"
+  }, {
+    "name" : "CustomReports",
+    "version" : "1.0",
+    "etag" : "94481ac2-b995-41f4-b844-6ad7cc2e257b"
+  }, {
+    "name" : "CustServiceObjService",
+    "version" : "1.0",
+    "etag" : "07302b98-9b55-4f65-9ab6-24158044050e"
+  }, {
+    "name" : "DashboardObjService",
+    "version" : "1.0",
+    "etag" : "0119075c-b7c9-42da-b213-827a756230b3"
+  }, {
+    "name" : "dbxdbObjects",
+    "version" : "1.0",
+    "etag" : "46a304da-9b84-49ad-a1e0-1df0f75f9f05"
+  }, {
+    "name" : "DecisionManagement",
+    "version" : "1.0",
+    "etag" : "5907fc9a-6853-4c5f-91c2-b3936cdbb64a"
+  }, {
+    "name" : "DMSUserCreationObjService",
+    "version" : "1.0",
+    "etag" : "8a572481-3bb3-4072-ac18-7c6bc0d0ec50"
+  }, {
+    "name" : "EmailObjService",
+    "version" : "1.0",
+    "etag" : "67a9a2d3-77e5-4f29-89c2-faa64f330ae3"
+  }, {
+    "name" : "FeatureObjService",
+    "version" : "1.0",
+    "etag" : "94ee1a90-3a5a-4aaa-9cda-b0e4b5c2f73e"
+  }, {
+    "name" : "IdentityManagementObjService",
+    "version" : "1.0",
+    "etag" : "eb90f215-19f9-4abb-b1b4-cbce8fab4912"
+  }, {
+    "name" : "InternalusersObjService",
+    "version" : "1.0",
+    "etag" : "a73c0168-afed-4827-a1c9-c02a7c2d62ce"
+  }, {
+    "name" : "KeyCloakObjService",
+    "version" : "1.0",
+    "etag" : "8f9a3e9b-e960-4177-a370-59141debc581"
+  }, {
+    "name" : "LeadAndApplicant",
+    "version" : "1.0",
+    "etag" : "022fbf2d-23b6-44fe-b6be-5d983d3ce5db"
+  }, {
+    "name" : "LocationObjService",
+    "version" : "1.0",
+    "etag" : "3776484f-2334-478b-aaeb-d4d262b0da51"
+  }, {
+    "name" : "ManageLimitsAndFees",
+    "version" : "1.0",
+    "etag" : "5f7516ca-7c0f-43e4-a07f-04a2e4b30b86"
+  }, {
+    "name" : "MasterDataObjService",
+    "version" : "1.0",
+    "etag" : "bcd385bb-c6e3-4bc8-8a7f-adc10bf2830f"
+  }, {
+    "name" : "MFAObjService",
+    "version" : "1.0",
+    "etag" : "1adbe9b5-e623-48d0-aa96-d4d6a74af87a"
+  }, {
+    "name" : "ReportsObjService",
+    "version" : "1.0",
+    "etag" : "86bbdcb0-b913-4ed7-be4a-1664d77d41e7"
+  }, {
+    "name" : "RolesAndPermissionsObjService",
+    "version" : "1.0",
+    "etag" : "4b648e7e-92ee-461e-b103-79d9e7469a29"
+  }, {
+    "name" : "SecurityOpsObjService",
+    "version" : "1.0",
+    "etag" : "57f190e0-4fe1-4a6f-b94b-22005ab2e1d0"
+  }, {
+    "name" : "ServerManagementObjService",
+    "version" : "1.0",
+    "etag" : "a16ad017-028b-4d5f-940c-b0840f27e35f"
+  }, {
+    "name" : "SignatoryGroupManageObjService",
+    "version" : "1.0",
+    "etag" : "8f51b599-d139-4038-a002-06d94e2fdff3"
+  }, {
+    "name" : "StaticContentObjService",
+    "version" : "1.0",
+    "etag" : "75509fb8-3fad-40d6-b907-7f92173d89e3"
+  }, {
+    "name" : "TermsAndConditionsObjService",
+    "version" : "1.0",
+    "etag" : "f4f502dc-43a8-42de-9fc2-32a1196a2b81"
+  } ],
+  "identity" : [ "DbxKeyCloakLogin", "KonyBankingAdminConsoleAPIIdentityService", "KonyBankingAdminConsoleIdentityService", "SFSpotlightLogin", "TPPAuthentication" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":true,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

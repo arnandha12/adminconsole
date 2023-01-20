@@ -1,0 +1,42 @@
+{
+  "operationConfig" : {
+    "name" : "createProfile8378",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <set-param inputpath=\"profileName\" outputpath=\"profileName\"/>            <set-param inputpath=\"profileDescription\" outputpath=\"profileDescription\"/>            <map inputpath=\"profileConditions\" outputpath=\"profileConditions\">                  <set-param inputpath=\"profileConditionId\" outputpath=\"profileConditionId\"/>                  <set-param inputpath=\"conditionExpression\" outputpath=\"conditionExpression\"/>                  <set-param inputpath=\"dataContextId\" outputpath=\"dataContextId\"/>                </map>  </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"profile\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CampaignManagementMS (1.0).createProfile\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:profile\",\"fromPort\":\"source\",\"toPort\":\"source:profile\",\"visible\":true,\"common\":false},{\"from\":\"source:profile\",\"to\":\"source:profile:fields\",\"fromPort\":\"source:profile\",\"toPort\":\"source:profile:fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:parameters\",\"fromPort\":\"target\",\"toPort\":\"target:parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileConditions:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileConditions:\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileDescription:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileDescription:\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileName:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "CampaignManagementMS",
+      "serviceVersion" : "1.0",
+      "operationName" : "createProfile"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "profile",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : true,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <set-param inputpath=\"profileName\" outputpath=\"profileName\"/>            <set-param inputpath=\"profileDescription\" outputpath=\"profileDescription\"/>            <map inputpath=\"profileConditions\" outputpath=\"profileConditions\">                  <set-param inputpath=\"profileConditionId\" outputpath=\"profileConditionId\"/>                  <set-param inputpath=\"conditionExpression\" outputpath=\"conditionExpression\"/>                  <set-param inputpath=\"dataContextId\" outputpath=\"dataContextId\"/>                </map>  </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"profile\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"CampaignManagementMS (1.0).createProfile\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:profile\",\"fromPort\":\"source\",\"toPort\":\"source:profile\",\"visible\":true,\"common\":false},{\"from\":\"source:profile\",\"to\":\"source:profile:fields\",\"fromPort\":\"source:profile\",\"toPort\":\"source:profile:fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:parameters\",\"fromPort\":\"target\",\"toPort\":\"target:parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileConditions:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileConditions:\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileDescription:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileDescription:\",\"visible\":true,\"common\":false},{\"from\":\"target:parameters\",\"to\":\"target:profileName:\",\"fromPort\":\"target:parameters\",\"toPort\":\"target:profileName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : true,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : true
+    } ]
+  }
+}

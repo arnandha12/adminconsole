@@ -1,0 +1,35 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "GetFeatures" : "GetFeaturesMapping",
+    "UpdateProduct" : "UpdateProductMapping",
+    "importProduct" : "importProductMapping",
+    "CreateProduct" : "CreateProductMapping",
+    "update" : "updateMapping",
+    "CreateProductGroup" : "CreateProductGroupMapping",
+    "GetProductLines" : "GetProductLinesMapping",
+    "getProductGroupsByProductLine" : "getProductGroupsByProductLineMapping",
+    "FetchBankDetailsBasedOnRoutingNumber" : "FetchBankDetailsBasedOnRoutingNumberMapping",
+    "CreateProductLine" : "CreateProductLineMapping",
+    "GetProductGroups" : "GetProductGroupsMapping",
+    "CreateFeature" : "CreateFeatureMapping",
+    "UpdateProductLine" : "UpdateProductLineMapping",
+    "GetAllProductGroups" : "GetAllProductGroupsMapping",
+    "GetProducts" : "GetProductsMapping",
+    "UpdateProductGroup" : "UpdateProductGroupMapping",
+    "create" : "createMapping",
+    "manageProductStatus" : "manageProductStatusMapping",
+    "getProductListFromMS" : "getProductListFromMSMapping",
+    "UpdateFeature" : "UpdateFeatureMapping",
+    "getProductsByProductGroup" : "getProductsByProductGroupMapping",
+    "getProductList" : "getProductListMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

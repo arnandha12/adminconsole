@@ -1,0 +1,24 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "CreateEmploymentDetails" : "CreateEmploymentDetailsMapping",
+    "CreateTaxDetails" : "CreateTaxDetailsMapping",
+    "UpdateTaxDetails" : "UpdateTaxDetailsMapping",
+    "GetDueDiligenceDetails" : "GetDueDiligenceDetailsMapping",
+    "UpdateAccountUsage" : "UpdateAccountUsageMapping",
+    "UpdateEmploymentDetails" : "UpdateEmploymentDetailsMapping",
+    "GetEmploymentDetails" : "GetEmploymentDetailsMapping",
+    "UpdateCitizenshipDetails" : "UpdateCitizenshipDetailsMapping",
+    "GetTaxDetails" : "GetTaxDetailsMapping",
+    "GetAccountUsage" : "GetAccountUsageMapping",
+    "CreateAccountUsage" : "CreateAccountUsageMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

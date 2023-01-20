@@ -1,0 +1,22 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getAllSignatoryGroupsbyCoreCustomerIds" : "getAllSignatoryGroupsbyCoreCustomerIdsMapping",
+    "deleteSignatoryGroup" : "deleteSignatoryGroupMapping",
+    "getApprovalPermissionsForUser" : "getApprovalPermissionsForUserMapping",
+    "createSignatoryGroup" : "createSignatoryGroupMapping",
+    "getNoGroupUsers" : "getNoGroupUsersMapping",
+    "isSignatoryGroupEligibleForDelete" : "isSignatoryGroupEligibleForDeleteMapping",
+    "getSignatoryGroupDetails" : "getSignatoryGroupDetailsMapping",
+    "getAllSignatoryGroups" : "getAllSignatoryGroupsMapping",
+    "updateSignatoryGroups" : "updateSignatoryGroupsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

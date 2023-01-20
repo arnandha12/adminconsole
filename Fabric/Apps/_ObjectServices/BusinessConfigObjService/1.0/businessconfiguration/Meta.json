@@ -1,0 +1,18 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getAlertConfigurations" : "getAlertConfigurationsMapping",
+    "editBusinessConfiguration" : "editBusinessConfigurationMapping",
+    "getBusinessConfigurations" : "getBusinessConfigurationsMapping",
+    "editAlertConfiguration" : "editAlertConfigurationMapping",
+    "getCoreTypeInformation" : "getCoreTypeInformationMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

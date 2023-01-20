@@ -1,0 +1,32 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getAllAccounts" : "getAllAccountsMapping",
+    "getCompanyAccounts" : "getCompanyAccountsMapping",
+    "getCompanyDetails" : "getCompanyDetailsMapping",
+    "getCompanyActionLimits" : "getCompanyActionLimitsMapping",
+    "getListOfCompanyByStatus" : "getListOfCompanyByStatusMapping",
+    "createCompany" : "createCompanyMapping",
+    "suspendCompanyFeatures" : "suspendCompanyFeaturesMapping",
+    "updateCompanyStatusToRejected" : "updateCompanyStatusToRejectedMapping",
+    "updateCompanyStatusToActive" : "updateCompanyStatusToActiveMapping",
+    "unlinkAccounts" : "unlinkAccountsMapping",
+    "getCompanyApprovalMatrix" : "getCompanyApprovalMatrixMapping",
+    "fetchAccountSignatories" : "fetchAccountSignatoriesMapping",
+    "editCompany" : "editCompanyMapping",
+    "get" : "getMapping",
+    "getMembershipDetails" : "getMembershipDetailsMapping",
+    "getCompanySignatories" : "getCompanySignatoriesMapping",
+    "verifyOFACandCIP" : "verifyOFACandCIPMapping",
+    "validateTIN" : "validateTINMapping",
+    "getCompanyCustomers" : "getCompanyCustomersMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

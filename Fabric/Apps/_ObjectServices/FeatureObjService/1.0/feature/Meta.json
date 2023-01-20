@@ -1,0 +1,26 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getAccountLevelFeatureAction" : "getAccountLevelFeatureActionMapping",
+    "editFeatureAndActionLimits" : "editFeatureAndActionLimitsMapping",
+    "getAccessPolicies" : "getAccessPoliciesMapping",
+    "editLimitGroup" : "editLimitGroupMapping",
+    "getAllFeaturesAndActions" : "getAllFeaturesAndActionsMapping",
+    "getActionLevels" : "getActionLevelsMapping",
+    "manageActionStatus" : "manageActionStatusMapping",
+    "getFeatureActions" : "getFeatureActionsMapping",
+    "downloadFeaturesList" : "downloadFeaturesListMapping",
+    "getServiceFee" : "getServiceFeeMapping",
+    "getAllFeatures" : "getAllFeaturesMapping",
+    "getLimitGroups" : "getLimitGroupsMapping",
+    "getAllMonetaryActions" : "getAllMonetaryActionsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

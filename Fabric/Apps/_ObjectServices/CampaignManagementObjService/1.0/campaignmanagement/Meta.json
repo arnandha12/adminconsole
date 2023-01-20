@@ -1,0 +1,20 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getEvents" : "getEventsMapping",
+    "updateDefaultCampaigns" : "updateDefaultCampaignsMapping",
+    "getCampaigns" : "getCampaignsMapping",
+    "getAllDefaultCampaigns" : "getAllDefaultCampaignsMapping",
+    "createCampaign" : "createCampaignMapping",
+    "getPlaceholders" : "getPlaceholdersMapping",
+    "updateCampaign" : "updateCampaignMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

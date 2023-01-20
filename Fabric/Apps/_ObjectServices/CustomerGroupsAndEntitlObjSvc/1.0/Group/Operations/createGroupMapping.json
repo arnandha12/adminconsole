@@ -1,0 +1,43 @@
+{
+  "customCode" : {
+    "responseProcessorName" : "com.kony.adminconsole.postprocessor.AuditLogsPostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "createGroup9799",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"servicedefinitions\" outputpath=\"servicedefinitions\"/><set-param inputpath=\"featureactions\" outputpath=\"featureactions\"/><set-param inputpath=\"name\" outputpath=\"name\"/><set-param inputpath=\"description\" outputpath=\"description\"/><set-param inputpath=\"typeId\" outputpath=\"typeId\"/><set-param inputpath=\"isApplicabletoAllServices\" outputpath=\"isApplicabletoAllServices\"/><set-param inputpath=\"isEAgreementActive\" outputpath=\"isEAgreementActive\"/><set-param inputpath=\"status\" outputpath=\"status\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "CustomerRole",
+      "serviceVersion" : "1.0",
+      "operationName" : "createGroup"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Group",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"servicedefinitions\" outputpath=\"servicedefinitions\"/><set-param inputpath=\"featureactions\" outputpath=\"featureactions\"/><set-param inputpath=\"name\" outputpath=\"name\"/><set-param inputpath=\"description\" outputpath=\"description\"/><set-param inputpath=\"typeId\" outputpath=\"typeId\"/><set-param inputpath=\"isApplicabletoAllServices\" outputpath=\"isApplicabletoAllServices\"/><set-param inputpath=\"isEAgreementActive\" outputpath=\"isEAgreementActive\"/><set-param inputpath=\"status\" outputpath=\"status\"/></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getAndUpdateUsersForSegment" : "getAndUpdateUsersForSegmentMapping",
+    "updateProfile" : "updateProfileMapping",
+    "createProfile" : "createProfileMapping",
+    "getProfiles" : "getProfilesMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "FabricReports.jar",
+    "type" : "servicejar"
+  } ]
+}

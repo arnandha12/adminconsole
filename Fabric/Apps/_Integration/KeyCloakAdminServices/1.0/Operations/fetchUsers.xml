@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="fetchUsers" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value="var access_token = request.getParameter(&quot;access_token&quot;);&#10;logger.debug(&quot;Access Token in Keycloak Orch Preprocesor == &quot;+access_token);&#10;request.addRequestParam_(&quot;Authorization&quot;,&quot;Bearer &quot;+access_token);&#10;request.setAttribute(&quot;Authorization&quot;,&quot;Bearer &quot;+access_token);"/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://_$_KEYCLOAK_ADMIN_SERVICES_ENDPOINT_URL_$_/users"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.adminconsole.commons.handler.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwbWl3d0laaTFaejdUUnlMcXY0T2pIbzZxZEF0eTdvWU5iZlB1aVlYc1JjIn0.eyJleHAiOjE2MDQ5ODk5NjYsImlhdCI6MTYwNDk4OTY2NiwiYXV0aF90aW1lIjoxNjA0OTg1NjI4LCJqdGkiOiI1NGZhZDEzMS1mYTA2LTQ2M2MtYThiMC1lMGVmNjQyMWVjZWUiLCJpc3MiOiJodHRwOi8va2gyNTczLnRlbWVub3Nncm91cC5jb206ODA4MS9hdXRoL3JlYWxtcy9zcG90bGlnaHRfcmVhbG0iLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiNjhkZTNiNGEtYThiNS00Njg4LThmNTYtNTZlZmI3NDIzMGU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic3BvdGxpZ2h0Iiwic2Vzc2lvbl9zdGF0ZSI6ImRiMWJjYjc4LWVjZDgtNDFmMi1hMTA3LTQyNzU3Yzc1YzNkMCIsImFjciI6IjAiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2toMjU3My50ZW1lbm9zZ3JvdXAuY29tOjgwODAiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfSwic3BvdGxpZ2h0Ijp7InJvbGVzIjpbIlN1cGVyIEFkbWluIiwiS2V5Q2xvYWtUZXN0IiwiS2V5Q2xvYWtUZXN0VXNlcnNSb2xlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJ1c2VyX2lkIjoiNjhkZTNiNGEtYThiNS00Njg4LThmNTYtNTZlZmI3NDIzMGU2Iiwicm9sZXMiOlsiU3VwZXIgQWRtaW4iLCJLZXlDbG9ha1Rlc3QiLCJLZXlDbG9ha1Rlc3RVc2Vyc1JvbGUiXSwibmFtZSI6IkMzNjAgQWRtaW4gQWRtaW5pc3RyYXRvciIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkbWluMSIsImdpdmVuX25hbWUiOiJDMzYwIEFkbWluIiwiZmFtaWx5X25hbWUiOiJBZG1pbmlzdHJhdG9yIiwiZW1haWwiOiJjMzYwYWRtaW5AdGVtZW5vcy5jb20ifQ.C_ForV3E3q27zRQOTO70hdSx7Od_4_odoXQ_xNxypStc__KvSXwE-63m9qC_lPKe59M7Abc4ZAzXq2oG1mqDfG613dL48fxBtpQIBRc_gwRq8hW7S_tyecEGObdCBlCnVala3lJR9GjI76pGsOiEPTiamXPlObcVIMQETVBovSBc9W1aGUF5oFRS9jyqbI9kU3ydsQyoQ47MJYUO2k2BybeT3hbvuEFJIG1uyIz2ME_M208mP2R3RleNQTDfHbo8_Q6IZ4jtmV1McuulY9hWHong2pnAELEAY4EJm_Rp9N_ja37YpAUGU8whYLUDMXVmLKNBsw1BMhjz-jUQ1E2nhQ" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <dataset defaultvalue="" id="internalusers_view" order="" paramOrder="1" parentOrder="0" src="$.[*]" testvalue="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="LastName" order="" paramOrder="2" parentOrder="1" passnull="false" sms-name="" src="lastName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="createdts" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="createdTimestamp" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="enabled" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="enabled" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="FirstName" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="firstName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="User_id" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Email" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="email" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Username" order="" paramOrder="8" parentOrder="1" passnull="false" sms-name="" src="username" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </dataset>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error" order="" paramOrder="9" parentOrder="0" passnull="false" sms-name="" src="$.error" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

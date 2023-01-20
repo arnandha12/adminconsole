@@ -1,0 +1,23 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getCustomerAlertTypePreference" : "getCustomerAlertTypePreferenceMapping",
+    "getAlertTypeDefinition" : "getAlertTypeDefinitionMapping",
+    "getAccountTypes" : "getAccountTypesMapping",
+    "getAlertCategoriesByAccountType" : "getAlertCategoriesByAccountTypeMapping",
+    "getCustomerAccountAlertSettings" : "getCustomerAccountAlertSettingsMapping",
+    "createAlertType" : "createAlertTypeMapping",
+    "updateAlertType" : "updateAlertTypeMapping",
+    "reassignAlertType" : "reassignAlertTypeMapping",
+    "editAlertType" : "editAlertTypeMapping",
+    "reorderAlertType" : "reorderAlertTypeMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

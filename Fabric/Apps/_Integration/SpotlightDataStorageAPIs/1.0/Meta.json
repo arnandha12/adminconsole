@@ -1,0 +1,10 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "infinity-api-commons.jar",
+    "type" : "jar"
+  }, {
+    "name" : "AdminConsoleServices.jar",
+    "type" : "jar"
+  } ]
+}

@@ -1,0 +1,24 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "editInfinityUser" : "editInfinityUserMapping",
+    "getInfinityUserAccounts" : "getInfinityUserAccountsMapping",
+    "getInfinityUser" : "getInfinityUserMapping",
+    "getInfinityUserContractDetails" : "getInfinityUserContractDetailsMapping",
+    "getAllEligibleRelationalCustomers" : "getAllEligibleRelationalCustomersMapping",
+    "getInfinityUserLimits" : "getInfinityUserLimitsMapping",
+    "getInfinityUserFeatureActions" : "getInfinityUserFeatureActionsMapping",
+    "createInfinityUser" : "createInfinityUserMapping",
+    "getRelativeCoreCustomerContractDetails" : "getRelativeCoreCustomerContractDetailsMapping",
+    "getAssociatedCustomers" : "getAssociatedCustomersMapping",
+    "getCoreCustomerContractDetails" : "getCoreCustomerContractDetailsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

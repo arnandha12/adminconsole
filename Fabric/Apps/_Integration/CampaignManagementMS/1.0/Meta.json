@@ -1,0 +1,13 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "AdminConsoleCommons.jar",
+    "type" : "jar"
+  }, {
+    "name" : "AdminConsoleJWTGeneration.jar",
+    "type" : "jar"
+  }, {
+    "name" : "AdminConsoleServices.jar",
+    "type" : "jar"
+  } ]
+}

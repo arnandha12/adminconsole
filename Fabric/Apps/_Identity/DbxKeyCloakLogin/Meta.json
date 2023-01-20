@@ -1,0 +1,19 @@
+{
+  "name" : "DbxKeyCloakLogin",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"dependent_providers\":[],\"auth_type\":\"oauth2\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"oauthProviderType\":\"default\",\"grant_type\":\"authorization_code\",\"authorization_endpoint\":\"https://api.morafinance.com:443/auth/realms/spotlight_realm/protocol/openid-connect/auth\",\"token_endpoint\":\"https://api.morafinance.com:443/services/KeyCloakOrchService/login\",\"logout_url\":\"https://api.morafinance.com:443/auth/realms/spotlight_realm/protocol/openid-connect/logout\",\"client_authentication\":{\"client_id\":\"\",\"client_secret\":\"\",\"authentication_scheme\":\"form\"},\"authentication_scheme\":\"form\",\"profile\":{\"endpoint\":{\"location\":\"\",\"type\":\"none\",\"value\":\"\"},\"request_method\":\"POST\",\"profile_attribute_selectors\":{\"federation_id\":\"preferred_username\",\"email\":\"\",\"first_name\":\"\",\"last_name\":\"\",\"custom_profile_attribute_selectors\":{}}},\"enable_refresh_login\":true,\"additional_data\":{\"token_request\":[],\"refresh_request\":[],\"profile_request\":[],\"authorize_request\":[],\"revoke_request\":[]}}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false,
+    "oauth2_success_url_config" : {
+      "allow_any" : true,
+      "allowed_urls" : [ ],
+      "default" : -1
+    }
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

@@ -1,0 +1,21 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "editAlertCategory" : "editAlertCategoryMapping",
+    "getAlertCategoryDefinition" : "getAlertCategoryDefinitionMapping",
+    "getCustomerAlertCategoryPreference" : "getCustomerAlertCategoryPreferenceMapping",
+    "getCustomerAlertCategoryChannelPreference" : "getCustomerAlertCategoryChannelPreferenceMapping",
+    "getCustomerAlertCategories" : "getCustomerAlertCategoriesMapping",
+    "reorderAlertCategory" : "reorderAlertCategoryMapping",
+    "createAlertCategory" : "createAlertCategoryMapping",
+    "getAlertCategories" : "getAlertCategoriesMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

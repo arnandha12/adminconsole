@@ -1,0 +1,12 @@
+{
+  "jars" : [ {
+    "name" : "AdminConsoleServices.jar",
+    "type" : "jar"
+  } ],
+  "config" : {
+    "metadataSecurity" : "authorized_app_user",
+    "delete_strategy" : "soft-delete",
+    "uploadCache" : false,
+    "conflict_policy" : "none"
+  }
+}

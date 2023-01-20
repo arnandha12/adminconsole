@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" description="" endpoint="default" groupType="" id="updateCustomerInfo" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.kony.adminconsole.preprocessor.PassthroughServicesPreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://_$_AC_DBP_SERVICES_URL_$_/services/data/v1/RBObjects/operations/DbxUser/updateCustomerDetailsForAdmin"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.adminconsole.commons.handler.ServiceURLProvider"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="X-Kony-Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="expression" sourcevalue="$Session.backendToken" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="phoneNumbers" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="preferredContactMethod" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="preferredContactTime" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="deleteAddressID" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="deleteCommunicationID" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userName" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="modifiedByName" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Addresses" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="EmailIds" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="eagreementStatus" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="RiskStatus" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="identities" order="" paramOrder="13" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="FirstName" order="" paramOrder="14" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="LastName" order="" paramOrder="15" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="DateOfBirth" order="" paramOrder="16" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="TaxId" order="" paramOrder="17" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="StartDate" order="" paramOrder="18" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Customer_id" order="" paramOrder="19" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Salutation" order="" paramOrder="20" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="EmployementStatus_id" order="" paramOrder="21" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="MaritalStatus_id" order="" paramOrder="22" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="SpouseName" order="" paramOrder="23" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="listOfRemovedRisks" order="" paramOrder="24" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="listOfAddedRisks" order="" paramOrder="25" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="BankingAccess" order="" paramOrder="26" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="newUserName" order="" paramOrder="27" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="DrivingLicenseNumber" order="" paramOrder="28" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="MiddleName" order="" paramOrder="29" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;  #if($phoneNumbers)&#10;  &quot;phoneNumbers&quot;: $phoneNumbers,&#10;  #end&#10;  #if($preferredContactMethod)&#10;  &quot;preferredContactMethod&quot;: &quot;$preferredContactMethod&quot;,&#10;  #end&#10;  #if($preferredContactTime)&#10;  &quot;preferredContactTime&quot;: &quot;$preferredContactTime&quot;,&#10;  #end&#10;  #if($deleteAddressID)&#10;  &quot;deleteAddressID&quot;: &quot;$deleteAddressID&quot;,&#10;  #end&#10;  #if($deleteCommunicationID)&#10;  &quot;deleteCommunicationID&quot;: &quot;$deleteCommunicationID&quot;,&#10;  #end&#10;  #if($modifiedByName)&#10;  &quot;modifiedByName&quot;: &quot;$modifiedByName&quot;,&#10;  #end&#10;  #if($Addresses)&#10;  &quot;Addresses&quot;: $Addresses,&#10;  #end&#10;  #if($EmailIds)&#10;  &quot;EmailIds&quot;: $EmailIds,&#10;  #end&#10;  #if($isEagreementSigned)&#10;  &quot;isEagreementSigned&quot;: &quot;$isEagreementSigned&quot;,&#10;  #end&#10;  #if($RiskStatus)&#10;  &quot;RiskStatus&quot;: &quot;$RiskStatus&quot;,&#10;  #end&#10;  #if($status)&#10;  &quot;status&quot;: &quot;$status&quot;,&#10;  #end&#10;  #if($identities)&#10;  &quot;identities&quot;: &quot;$identities&quot;,&#10;  #end&#10;  #if($FirstName)&#10;  &quot;FirstName&quot;: &quot;$FirstName&quot;,&#10;  #end&#10;  #if($LastName)&#10;  &quot;LastName&quot;: &quot;$LastName&quot;,&#10;  #end&#10;  #if($DateOfBirth)&#10;  &quot;DateOfBirth&quot;: &quot;$DateOfBirth&quot;,&#10;  #end&#10;  #if($TaxId)&#10;  &quot;TaxId&quot;: &quot;$TaxId&quot;,&#10;  #end&#10;  #if($StartDate)&#10;  &quot;StartDate&quot;: &quot;$StartDate&quot;,&#10;  #end&#10;  #if($Customer_id)&#10;  &quot;Customer_id&quot;: &quot;$Customer_id&quot;,&#10;  #end&#10;  #if($Salutation)&#10;  &quot;Salutation&quot;: &quot;$Salutation&quot;,&#10;  #end&#10;  #if($EmployementStatus_id)&#10;  &quot;EmployementStatus_id&quot;: &quot;$EmployementStatus_id&quot;,&#10;  #end&#10;  #if($MaritalStatus_id)&#10;  &quot;MaritalStatus_id&quot;: &quot;$MaritalStatus_id&quot;,&#10;  #end&#10;  #if($SpouseName)&#10;  &quot;SpouseName&quot;: &quot;$SpouseName&quot;,&#10;  #end&#10;  #if($listOfRemovedRisks)&#10;  &quot;listOfRemovedRisks&quot;: &quot;$listOfRemovedRisks&quot;,&#10;  #end&#10;  #if($listOfAddedRisks)&#10;  &quot;listOfAddedRisks&quot;: &quot;$listOfAddedRisks&quot;,&#10;  #end&#10;  #if($BankingAccess)&#10;  &quot;BankingAccess&quot;: &quot;$BankingAccess&quot;,&#10;  #end&#10;  #if($newUserName)&#10;  &quot;newUserName&quot;: &quot;$newUserName&quot;,&#10;  #end&#10;  #if($DrivingLicenseNumber)&#10;  &quot;DrivingLicenseNumber&quot;: &quot;$DrivingLicenseNumber&quot;,&#10;  #end&#10;  #if($MiddleName)&#10;  &quot;MiddleName&quot;: &quot;$MiddleName&quot;,&#10;  #end&#10;  #if($userName)&#10;  &quot;userName&quot;: &quot;$userName&quot;&#10;  #end&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;  #if($phoneNumbers)&#10;  &quot;phoneNumbers&quot;: $phoneNumbers,&#10;  #end&#10;  #if($preferredContactMethod)&#10;  &quot;preferredContactMethod&quot;: &quot;$preferredContactMethod&quot;,&#10;  #end&#10;  #if($preferredContactTime)&#10;  &quot;preferredContactTime&quot;: &quot;$preferredContactTime&quot;,&#10;  #end&#10;  #if($deleteAddressID)&#10;  &quot;deleteAddressID&quot;: &quot;$deleteAddressID&quot;,&#10;  #end&#10;  #if($deleteCommunicationID)&#10;  &quot;deleteCommunicationID&quot;: &quot;$deleteCommunicationID&quot;,&#10;  #end&#10;  #if($modifiedByName)&#10;  &quot;modifiedByName&quot;: &quot;$modifiedByName&quot;,&#10;  #end&#10;  #if($Addresses)&#10;  &quot;Addresses&quot;: $Addresses,&#10;  #end&#10;  #if($EmailIds)&#10;  &quot;EmailIds&quot;: $EmailIds,&#10;  #end&#10;  #if($isEagreementSigned)&#10;  &quot;isEagreementSigned&quot;: &quot;$isEagreementSigned&quot;,&#10;  #end&#10;  #if($RiskStatus)&#10;  &quot;RiskStatus&quot;: &quot;$RiskStatus&quot;,&#10;  #end&#10;  #if($status)&#10;  &quot;status&quot;: &quot;$status&quot;,&#10;  #end&#10;  #if($identities)&#10;  &quot;identities&quot;: &quot;$identities&quot;,&#10;  #end&#10;  #if($FirstName)&#10;  &quot;FirstName&quot;: &quot;$FirstName&quot;,&#10;  #end&#10;  #if($LastName)&#10;  &quot;LastName&quot;: &quot;$LastName&quot;,&#10;  #end&#10;  #if($DateOfBirth)&#10;  &quot;DateOfBirth&quot;: &quot;$DateOfBirth&quot;,&#10;  #end&#10;  #if($TaxId)&#10;  &quot;TaxId&quot;: &quot;$TaxId&quot;,&#10;  #end&#10;  #if($StartDate)&#10;  &quot;StartDate&quot;: &quot;$StartDate&quot;,&#10;  #end&#10;  #if($Customer_id)&#10;  &quot;Customer_id&quot;: &quot;$Customer_id&quot;,&#10;  #end&#10;  #if($Salutation)&#10;  &quot;Salutation&quot;: &quot;$Salutation&quot;,&#10;  #end&#10;  #if($EmployementStatus_id)&#10;  &quot;EmployementStatus_id&quot;: &quot;$EmployementStatus_id&quot;,&#10;  #end&#10;  #if($MaritalStatus_id)&#10;  &quot;MaritalStatus_id&quot;: &quot;$MaritalStatus_id&quot;,&#10;  #end&#10;  #if($SpouseName)&#10;  &quot;SpouseName&quot;: &quot;$SpouseName&quot;,&#10;  #end&#10;  #if($listOfRemovedRisks)&#10;  &quot;listOfRemovedRisks&quot;: &quot;$listOfRemovedRisks&quot;,&#10;  #end&#10;  #if($listOfAddedRisks)&#10;  &quot;listOfAddedRisks&quot;: &quot;$listOfAddedRisks&quot;,&#10;  #end&#10;  #if($BankingAccess)&#10;  &quot;BankingAccess&quot;: &quot;$BankingAccess&quot;,&#10;  #end&#10;  #if($newUserName)&#10;  &quot;newUserName&quot;: &quot;$newUserName&quot;,&#10;  #end&#10;  #if($DrivingLicenseNumber)&#10;  &quot;DrivingLicenseNumber&quot;: &quot;$DrivingLicenseNumber&quot;,&#10;  #end&#10;  #if($MiddleName)&#10;  &quot;MiddleName&quot;: &quot;$MiddleName&quot;,&#10;  #end&#10;  #if($userName)&#10;  &quot;userName&quot;: &quot;$userName&quot;&#10;  #end&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="success" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="success" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="Status" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="Status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="opstatus_UpdateCustomerDetailsOperation" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="opstatus_UpdateCustomerDetailsOperation" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="opstatus_UpdateCustomerInParty" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="opstatus_UpdateCustomerInParty" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="errmsg" order="" paramOrder="5" parentOrder="0" passnull="false" sms-name="" src="errmsg" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="dbpErrCode" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="dbpErrCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

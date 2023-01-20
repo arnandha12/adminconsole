@@ -1,0 +1,19 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "updateProduct" : "updateProductMapping",
+    "createProduct" : "createProductMapping",
+    "deleteProductFacility" : "deleteProductFacilityMapping",
+    "updateProductFacility" : "updateProductFacilityMapping",
+    "createProductFacility" : "createProductFacilityMapping",
+    "getProducts" : "getProductsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

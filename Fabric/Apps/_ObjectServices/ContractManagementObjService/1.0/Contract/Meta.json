@@ -1,0 +1,25 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "editContract" : "editContractMapping",
+    "getContractDetails" : "getContractDetailsMapping",
+    "searchContract" : "searchContractMapping",
+    "getCoreRelativeCustomers" : "getCoreRelativeCustomersMapping",
+    "getContractAccounts" : "getContractAccountsMapping",
+    "createContract" : "createContractMapping",
+    "getCoreCustomerAccounts" : "getCoreCustomerAccountsMapping",
+    "getListOfContractsByStatus" : "getListOfContractsByStatusMapping",
+    "getContractFeatureActionLimits" : "getContractFeatureActionLimitsMapping",
+    "searchCoreCustomers" : "searchCoreCustomersMapping",
+    "getContractInfinityUsers" : "getContractInfinityUsersMapping",
+    "updateContractStatus" : "updateContractStatusMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

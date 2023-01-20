@@ -1,0 +1,47 @@
+{
+  "customCode" : {
+    "responseProcessorName" : "com.kony.adminconsole.postprocessor.AuditLogsPostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "deleteServiceDefinition8080",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"id\" outputpath=\"id\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                  <map inputpath=\"response_in\" outputpath=\"response_out\">                                    <set-param inputpath=\"success\" outputpath=\"success\"/>                                    <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>                                    <set-param inputpath=\"id\" outputpath=\"id\"/>                        <set-param inputpath=\"dbpErrCode\" outputpath=\"dbpErrCode\"/>                                <set-param inputpath=\"dbpErrMsg\" outputpath=\"dbpErrMsg\"/>             </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"servicedefinition\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"BusinessBanking (1.0).deleteServiceDefinition\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:servicedefinition\",\"fromPort\":\"target\",\"toPort\":\"target:servicedefinition\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition\",\"to\":\"target:servicedefinition:fields\",\"fromPort\":\"target:servicedefinition\",\"toPort\":\"target:servicedefinition:fields\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:name:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:name:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:description:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:description:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:serviceType:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:serviceType:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:featureactions:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:featureactions:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:serviceDefinitionId:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:serviceDefinitionId:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:status:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:status:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:id:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:id:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "BusinessBanking",
+      "serviceVersion" : "1.0",
+      "operationName" : "deleteServiceDefinition"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "servicedefinition",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"id\" outputpath=\"id\"/></map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                  <map inputpath=\"response_in\" outputpath=\"response_out\">                                    <set-param inputpath=\"success\" outputpath=\"success\"/>                                    <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>                                    <set-param inputpath=\"id\" outputpath=\"id\"/>                        <set-param inputpath=\"dbpErrCode\" outputpath=\"dbpErrCode\"/>                                <set-param inputpath=\"dbpErrMsg\" outputpath=\"dbpErrMsg\"/>             </map></mapper>",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"servicedefinition\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"BusinessBanking (1.0).deleteServiceDefinition\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:servicedefinition\",\"fromPort\":\"target\",\"toPort\":\"target:servicedefinition\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition\",\"to\":\"target:servicedefinition:fields\",\"fromPort\":\"target:servicedefinition\",\"toPort\":\"target:servicedefinition:fields\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:name:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:name:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:description:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:description:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:serviceType:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:serviceType:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:featureactions:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:featureactions:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:serviceDefinitionId:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:serviceDefinitionId:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:status:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:status:\",\"visible\":true,\"common\":false},{\"from\":\"target:servicedefinition:fields\",\"to\":\"target:servicedefinition:id:\",\"fromPort\":\"target:servicedefinition:fields\",\"toPort\":\"target:servicedefinition:id:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  }
+}

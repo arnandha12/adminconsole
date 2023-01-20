@@ -1,0 +1,22 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "editCustomer" : "editCustomerMapping",
+    "getCustomerAccounts" : "getCustomerAccountsMapping",
+    "createSignatory" : "createSignatoryMapping",
+    "createCustomer" : "createCustomerMapping",
+    "editSignatory" : "editSignatoryMapping",
+    "upgradeUser" : "upgradeUserMapping",
+    "verifyUsername" : "verifyUsernameMapping",
+    "fetchAuthorizedSignatories" : "fetchAuthorizedSignatoriesMapping",
+    "upgradeRolesAndEntiltlements" : "upgradeRolesAndEntiltlementsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}
