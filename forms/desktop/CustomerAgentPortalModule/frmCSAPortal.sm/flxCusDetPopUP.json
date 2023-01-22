@@ -36,7 +36,9 @@
     "canUpdateUI": true,
     "children": [
         "btnCusCancel",
-        "btnCusApr"
+        "btnCusApr",
+        "imgApprove",
+        "lblApprove"
     ],
     "clipbounds": true,
     "containerweight": 100,

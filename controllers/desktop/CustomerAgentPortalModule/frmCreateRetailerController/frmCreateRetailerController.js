@@ -157,6 +157,8 @@ define({
     }
   },
   createRetailerSuccessCB: function(response) {
+    this.view.flxUserCreated.isVisible = true;
+    this.view.forceLayout();
     this.view.flxLoading.setVisibility(false);
     this.view.txtBoxUsername.text = "";
     this.view.listPartnerList.selectedKey = "0";
@@ -164,7 +166,6 @@ define({
     this.view.txtBoxCountryCodeMobile.text = "+966";
     this.view.txtBoxEmail.text = "";
 	this.view.txtBoxCountryCodeMobile.setEnabled(false);
-    this.view.flxUserCreated.isVisible = true;
     kony.print(response);
   },
   createRetailerErrorCB: function(error) {

@@ -1,8 +1,7 @@
 define({
     /*
-      This is an auto generated file and any modifications to it may result in corruption of the action sequence.
+        This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    /** onHover defined for loaninfo **/
     AS_FlexContainer_f060a06b2a454e61a0577b070e30e355: function AS_FlexContainer_f060a06b2a454e61a0577b070e30e355(eventobject, context) {
         var self = this;
         var self = this;

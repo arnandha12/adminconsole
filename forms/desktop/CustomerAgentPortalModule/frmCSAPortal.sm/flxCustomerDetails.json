@@ -43,7 +43,7 @@
     "id": "flxCustomerDetails",
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "a85fdbd6305e401da66767d268e05ef1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

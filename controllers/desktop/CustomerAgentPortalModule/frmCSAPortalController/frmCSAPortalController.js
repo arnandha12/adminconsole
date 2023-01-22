@@ -15,6 +15,15 @@ define({
       self.view.flxClose.onClick  = () => {
         self.view.flxCustomerDetails.setVisibility(false);
       };
+      self.view.imgApprove.onTouchStart = () => {
+        if(self.view.imgApprove.src === "checkboxnoraml.png") {
+          self.view.imgApprove.src = "checkboxselected.png";
+          self.view.btnCusApr.setVisibility(true);
+        } else {
+          self.view.imgApprove.src = "checkboxnoraml.png";
+          self.view.btnCusApr.setVisibility(false);
+        }
+      };
       serviceName = "CustomerAgentDBService";
       integrationObj = KNYMobileFabric.getIntegrationService(serviceName);
       operationName =  "dbxdb_customer_loan_view_get";
@@ -107,6 +116,10 @@ define({
       self.view.btnCusCancel.onClick =()=> {
         this.rejectRecord( data.aid,data.application_id);
       };
+      
+      //
+      self.view.btnCusApr.setVisibility(false);
+      self.view.imgApprove.src = "checkboxnormal.png";
     }catch(e){
       kony.print("Error in showcustomer details "+e);
     }
